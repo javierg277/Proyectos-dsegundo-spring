@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="306.0" style="-fx-background-color: #2D3047;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pruebalogin.CreateuserController">
+   <children>
+      <TextField fx:id="Usernamefield" layoutX="78.0" layoutY="135.0" />
+      <TextField fx:id="Agefield" layoutX="78.0" layoutY="273.0" />
+      <Label layoutX="65.0" layoutY="28.0" text="Create User" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="93.0" text="Username:" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="161.0" text="Password:" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="129.0" layoutY="226.0" text="Age:" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="Donebtt" layoutX="104.0" layoutY="321.0" mnemonicParsing="false" onMouseClicked="#DoneA" prefHeight="54.0" prefWidth="97.0" style="-fx-background-color: #ffffff;" text="Done">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="420.0" layoutX="22.0" layoutY="-18.0" stroke="WHITE" strokeType="INSIDE" width="3.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="420.0" layoutX="280.0" layoutY="-18.0" stroke="WHITE" strokeType="INSIDE" width="3.0" />
+      <Label layoutX="139.0" layoutY="84.0" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Errorlbl" layoutX="136.0" layoutY="79.0" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="Passwordfield" layoutX="79.0" layoutY="200.0" />
+   </children>
+</AnchorPane>

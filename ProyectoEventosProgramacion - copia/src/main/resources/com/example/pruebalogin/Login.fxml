@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pruebalogin.LoginController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="292.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="Logo" fitHeight="184.0" fitWidth="205.0" layoutX="44.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@LogoDesign.jpg" />
+               </image></ImageView>
+            <Button fx:id="SignUpbtt" layoutX="63.0" layoutY="284.0" mnemonicParsing="false" onMouseClicked="#Singup" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #2D3047;" text="Sing up" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="85.0" layoutY="359.0" onMouseClicked="#PasswordF" text="Forgot your password?" textFill="#356bff" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="374.0" style="-fx-background-color: #2D3047;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="110.0" layoutY="67.0" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="152.0" text="UserName:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="200.0" text="Password:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="UserNametxt" layoutX="154.0" layoutY="152.0" prefHeight="27.0" prefWidth="114.0" />
+            <Button fx:id="Loginbtt" layoutX="71.0" layoutY="285.0" mnemonicParsing="false" onMouseClicked="#UserValidates" prefHeight="50.0" prefWidth="166.0" style="-fx-background-color: #ffffff;" text="Login">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="Passwordtxt" layoutX="154.0" layoutY="201.0" prefHeight="26.0" prefWidth="114.0" />
+         </children></AnchorPane>
+   </right>
+</BorderPane>

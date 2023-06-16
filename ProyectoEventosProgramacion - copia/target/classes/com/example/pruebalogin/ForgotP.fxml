@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="322.0" prefWidth="363.0" style="-fx-background-color: #2D3047;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pruebalogin.PasswordForgotController">
+   <children>
+      <Label layoutX="57.0" layoutY="89.0" text="UserName:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="144.0" text="Age:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="332.0" layoutX="27.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="4.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="327.0" layoutX="332.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="4.0" />
+      <Label layoutX="118.0" layoutY="14.0" text="Recovery" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="UserNametxt" layoutX="163.0" layoutY="90.0" style="-fx-background-color: #ffffff;" />
+      <TextField fx:id="Agetxt" layoutX="163.0" layoutY="145.0" style="-fx-background-color: #ffffff;" />
+      <Button fx:id="Checkboxbtt" layoutX="124.0" layoutY="256.0" mnemonicParsing="false" onMouseClicked="#CheckData" prefHeight="51.0" prefWidth="106.0" style="-fx-background-color: #ffffff;" text="Check">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="Errorlbl" layoutX="163.0" layoutY="68.0" textFill="RED" />
+      <TextField fx:id="Passwordtxt" layoutX="107.0" layoutY="202.0" style="-fx-background-color: #ffffff;" />
+      <Label fx:id="Correctlbl" layoutX="112.0" layoutY="177.0" textFill="#16e108" />
+   </children>
+</AnchorPane>

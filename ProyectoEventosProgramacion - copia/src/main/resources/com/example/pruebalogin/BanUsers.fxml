@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2D3047;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pruebalogin.BanUserController">
+   <children>
+      <Button fx:id="Eventsbtt" layoutX="179.0" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#ShowEvent" prefHeight="38.0" prefWidth="217.0" style="-fx-background-color: #ffffff;" text="Events" />
+      <Button fx:id="backbtt3" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#BackLogin1" prefHeight="38.0" prefWidth="182.0" style="-fx-background-color: #ffffff;" text="Back" />
+      <Button fx:id="BanUsersBtt" layoutX="399.0" layoutY="1.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="210.0" style="-fx-background-color: #ffffff;" text="Ban Users:" />
+      <TableView fx:id="tblEvents" layoutX="115.0" layoutY="74.0" prefHeight="198.0" prefWidth="411.0">
+         <columns>
+            <TableColumn fx:id="NameCol" prefWidth="211.1999969482422" text="name" />
+            <TableColumn fx:id="NameCol1" prefWidth="196.79998779296875" text="Age" />
+         </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="38.0" layoutX="179.0" layoutY="1.0" stroke="DODGERBLUE" strokeType="INSIDE" width="6.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="38.0" layoutX="394.0" layoutY="1.0" stroke="DODGERBLUE" strokeType="INSIDE" width="6.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="6.0" layoutY="36.0" stroke="DODGERBLUE" strokeType="INSIDE" width="609.0" />
+      <Label layoutX="71.0" layoutY="294.0" text="Username:" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="Banbtt" layoutX="400.0" layoutY="294.0" mnemonicParsing="false" onMouseClicked="#BanUser" prefHeight="35.0" prefWidth="85.0" style="-fx-background-color: #ffffff; -fx-border-radius: 15px;" text="Ban" />
+      <TextField fx:id="Nametxt" layoutX="200.0" layoutY="299.0" style="-fx-background-color: #ffffff;" />
+   </children>
+</AnchorPane>
